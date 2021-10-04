@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+actor "Vendedor" as fc
+rectangle Tienda_de_la_40 {
+  usecase "Registrar ventas" as UC1
+  usecase "Registrar entrada\n de productos" as UC2
+  usecase "Actualizar datos" as UC3
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+
+@enduml
